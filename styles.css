@@ -74,11 +74,10 @@ header{
 }
 .brand{display:flex; align-items:center; gap:12px;}
 .brand-mark{
-  width:38px; height:38px; border-radius:8px;
-  background:linear-gradient(160deg, var(--amber) 0%, var(--amber-deep) 100%);
+  width:40px; height:40px; border-radius:10px;
   display:flex; align-items:center; justify-content:center;
-  color:var(--white); font-family:'Archivo Expanded',sans-serif; font-weight:700; font-size:15px;
   flex-shrink:0;
+  box-shadow: 0 2px 8px rgba(181,141,55,0.25);
 }
 .brand-text{line-height:1.2;}
 .brand-text strong{display:block; font-size:15px; font-weight:600;}
@@ -87,6 +86,12 @@ nav.links{display:flex; gap:36px; align-items:center;}
 nav.links a{font-size:14px; font-weight:500; color:var(--ink-soft); transition:color .2s;}
 nav.links a:hover, nav.links a:focus-visible{color:var(--amber-deep);}
 nav.links a.active{color:var(--ink);}
+
+/* Make the header WhatsApp button explicitly white */
+nav.links a.btn-amber {
+  color: var(--white);
+}
+
 .btn{
   display:inline-flex; align-items:center; gap:8px;
   padding:12px 22px; border-radius:4px; font-size:14px; font-weight:600;
